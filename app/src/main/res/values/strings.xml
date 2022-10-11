@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">li,bowen-labs</string>
-    <string name="helllo_string">Hello ANDROID!</string>
+    <string name="helllo_string" translatable="false">Hello ANDROID!</string>
 </resources>
