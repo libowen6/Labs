@@ -23,9 +23,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CoinMainActivity"
+            android:name=".CoinTossActivity"
             android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

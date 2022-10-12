@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">li,bowen-labs</string>
     <string name="helllo_string" translatable="false">Hello ANDROID!</string>
+    <string name="coinTossResult1" translatable="false">Head!</string>
+    <string name="coinTossResult2" translatable="false">Tails</string>
+    <string name="coinTossButtonText" translatable="false">OPEN COIN TOSS</string>
 </resources>

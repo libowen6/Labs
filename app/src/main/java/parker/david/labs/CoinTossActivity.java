@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import android.util.Log;
-
 import java.util.Random;
 
 import android.view.View;
-import android.widget.TextView;
-public class CoinMainActivity extends AppCompatActivity {
+import  android.widget.TextView;
+
+public class CoinTossActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,9 @@ public class CoinMainActivity extends AppCompatActivity {
         super.onPause();
         Log.i("Activity Lifecycle","onPause");
     }
-    Random random;
+
     private String getCoinToss(){
+        Random random = new Random();
         if(random.nextBoolean()) {
             return "Heads";
         }
@@ -42,10 +43,5 @@ public class CoinMainActivity extends AppCompatActivity {
 
         coinTossView.setText(result);
     }
-    public void openCoinToss(View view){
-        Intent openCoinTossIntent=new Intent(getApplicationContext(),CoinTossACtivity.class);
-        startActivity(openCoinTossIntent);
-    }
-
 
 }
