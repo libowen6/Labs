@@ -3,6 +3,7 @@ package parker.david.labs;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -10,6 +11,7 @@ import java.util.Random;
 
 import android.view.View;
 import  android.widget.TextView;
+import android.widget.Toast;
 
 public class CoinTossActivity extends AppCompatActivity {
 
@@ -18,6 +20,11 @@ public class CoinTossActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coin_toss);
         Log.i( "Activity Lifecycle",  "onCreate");
+
+        Bundle extras = getIntent().getExtras();
+        String name = extras.getString("ExtraName");
+        Toast.makeText(getApplicationContext(),"This is the extra string that we passed in" + name,
+                Toast.LENGTH_LONG).show();
     }
     @Override
     protected void onPause() {
@@ -43,5 +50,6 @@ public class CoinTossActivity extends AppCompatActivity {
 
         coinTossView.setText(result);
     }
+
 
 }
